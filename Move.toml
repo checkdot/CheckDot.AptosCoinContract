@@ -1,0 +1,18 @@
+[package]
+name = "checkdot-aptos-coin"
+version = "0.1.0"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'mainnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+cdt = "b366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f"
+
+[[bin]]
+name = "checkdot-aptos-coin"
+path = "sources/CheckDot.move"
